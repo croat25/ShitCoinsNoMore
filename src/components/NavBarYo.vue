@@ -36,15 +36,15 @@ export default {
         <small>
           current Market Cap Of Market: {{currentMarketCapUsd}}
         </small>
-        |
+        <br>
         <small>
           BTC only dominates {{BTCDominatrix}}% of the Market
         </small>
-        |
+        <br>
         <small>
           All Time High of Market is {{MarketATH}}
         </small>
-        |
+        <br>
         <small>
           In the last 24 hours the market has been this volitate {{TwoFourChange}}%
         </small>

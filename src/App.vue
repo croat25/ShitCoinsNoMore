@@ -3,24 +3,31 @@ import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 import NavBarYo from './components/NavBarYo.vue'
 import HistoricalChart from './components/HistoricalChart.vue'
+import HistoricalChartEth from './components/HistoricalChartEth.vue'
+import HistoricalChartXmr from './components/HistoricalChartXmr.vue'
+import DropDownCoin from './components/DropDownCoin.vue'
 </script>
 
 <template>
   <header> 
+    <H1>Leet Coining Featuring Bruno Jenkins</H1>
+    <h4>Dont Waste ur time with all the shitcoins</h4>
+    <h4>only focus on the real coins</h4>
+    <br><br><br>
     <NavBarYo />
 
     <div class="wrapper">
-      
-      <!-- <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav> -->
+
     </div>
   </header>
 
-
+  <br>
+  <br>
+  <br>
 
   <HistoricalChart />
+  <HistoricalChartEth />
+  <HistoricalChartXmr />
   <RouterView />
 </template>
 

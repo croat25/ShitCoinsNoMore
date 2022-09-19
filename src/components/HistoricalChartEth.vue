@@ -30,27 +30,27 @@ export default {
   async created() {
     try {
       const response = await axios.get(
-        `https://api.coinpaprika.com/v1/tickers/btc-bitcoin/historical?start=2022-01-01&interval=1d`
+        `https://api.coinpaprika.com/v1/tickers/eth-ethereum/historical?start=2022-01-01&interval=1d`
       );
 
-      const btcDetailInfoResponse = await axios.get(`https://api.coinpaprika.com/v1/tickers/btc-bitcoin`);
+      const ethDetailInfoResponse = await axios.get(`https://api.coinpaprika.com/v1/tickers/eth-ethereum`);
 
-      this.symbol = btcDetailInfoResponse.data.symbol
-      this.rank = btcDetailInfoResponse.data.rank
+      this.symbol = ethDetailInfoResponse.data.symbol
+      this.rank = ethDetailInfoResponse.data.rank
 
-      this.circulatingSupply = btcDetailInfoResponse.data.circulating_supply;
-      this.totalSupply = btcDetailInfoResponse.data.total_supply;
-      this.maxSupply = btcDetailInfoResponse.data.max_supply;
-      this.betaValue = btcDetailInfoResponse.data.beta_value;
-      this.USDPrice = btcDetailInfoResponse.data.quotes.USD.price;
-      this.percentChange1h = btcDetailInfoResponse.data.quotes.USD.percent_change_1h;
-      this.percentChange12h = btcDetailInfoResponse.data.quotes.USD.percent_change_12h;
-      this.percentChange24h = btcDetailInfoResponse.data.quotes.USD.percent_change_24h;
-      this.percentChange7d = btcDetailInfoResponse.data.quotes.USD.percent_change_7d;
-      this.percentChange30d = btcDetailInfoResponse.data.quotes.USD.percent_change_30d;
-      this.percentChange1y = btcDetailInfoResponse.data.quotes.USD.percent_change_1y;
-      this.percentFromATH = btcDetailInfoResponse.data.quotes.USD.percent_from_price_ath;
-      this.ATHPrice = btcDetailInfoResponse.data.quotes.USD.ath_price;
+      this.circulatingSupply = ethDetailInfoResponse.data.circulating_supply;
+      this.totalSupply = ethDetailInfoResponse.data.total_supply;
+      this.maxSupply = ethDetailInfoResponse.data.max_supply;
+      this.betaValue = ethDetailInfoResponse.data.beta_value;
+      this.USDPrice = ethDetailInfoResponse.data.quotes.USD.price;
+      this.percentChange1h = ethDetailInfoResponse.data.quotes.USD.percent_change_1h;
+      this.percentChange12h = ethDetailInfoResponse.data.quotes.USD.percent_change_12h;
+      this.percentChange24h = ethDetailInfoResponse.data.quotes.USD.percent_change_24h;
+      this.percentChange7d = ethDetailInfoResponse.data.quotes.USD.percent_change_7d;
+      this.percentChange30d = ethDetailInfoResponse.data.quotes.USD.percent_change_30d;
+      this.percentChange1y = ethDetailInfoResponse.data.quotes.USD.percent_change_1y;
+      this.percentFromATH = ethDetailInfoResponse.data.quotes.USD.percent_from_price_ath;
+      this.ATHPrice = ethDetailInfoResponse.data.quotes.USD.ath_price;
 
       let timeStampList = [];
       let priceList = [];
@@ -61,15 +61,15 @@ export default {
       this.labelsOfTimeStamp = timeStampList;
       this.price = priceList;
       // this.price = response.data.bpi.USD.rate;
-      const ctx = document.getElementById("myChart");
+      const ctx = document.getElementById("myChartEth");
 
-      const btcChart = new Chart(ctx, {
+      const ethChart = new Chart(ctx, {
         type: "line",
         data: {
           labels: this.labelsOfTimeStamp,
           datasets: [
             {
-              label: "Btc Price in Usd",
+              label: "Eth Price in Usd",
               data: this.price,
               fill: false,
               borderColor: "rgb(75, 192, 192)",
@@ -79,14 +79,14 @@ export default {
         },
       });
 
-      btcChart;
+      ethChart;
     } catch (e) {}
   },
 };
 </script>
 <template>
   <div>
-    <h1>BTC Info</h1>
+    <h1>Eth Info</h1>
     <tr>
       <td aria-colindex="1" role="cell" class> Symbol:</td>
       <td aria-colindex="2" role="cell" class> {{symbol}}</td>
@@ -132,7 +132,7 @@ export default {
       <td aria-colindex="2" role="cell" class> {{ATHPrice}}</td>
     </tr>
 
-    <canvas id="myChart" width="100" height="50"></canvas>
+    <canvas id="myChartEth" width="100" height="50"></canvas>
     <li v-for="item in labels" :key="item">
       {{ item }}
     </li>
