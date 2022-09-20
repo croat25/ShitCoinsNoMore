@@ -4,8 +4,8 @@ I know i know, when u hear "over 9000 ARGGGGG" different cryptocurrencies are av
 
 Brought to you by Bruno Jenkins, Here are the only coins that matter
 
-BTC
-ETH(soon to be shit coin - hard to tell)
+BTC | 
+ETH(soon to be shit coin - hard to tell) | 
 XMR
 
 ## Customize configuration
