@@ -1,14 +1,15 @@
-# hfghj
+# ShitCoinsNoMore
 
-This template should help get you started developing with Vue 3 in Vite.
+I know i know, when u hear "over 9000 ARGGGGG" different cryptocurrencies are available. its brain exploding
 
-## Recommended IDE Setup
+Brought to you by Bruno Jenkins, Here are the only coins that matter
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+BTC | 
+ETH(soon to be shit coin - hard to tell) | 
+XMR
 
 ## Customize configuration
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Project Setup
 
