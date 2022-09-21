@@ -128,7 +128,7 @@ export default {
       <td aria-colindex="2" role="cell" class> {{percentChange1y}}</td>
     </tr>
     <tr>
-      <td aria-colindex="1" role="cell" class> The Most a retard was willing to pay for a btc: </td>
+      <td aria-colindex="1" role="cell" class> The Most a retard was willing to pay for a Xmr: </td>
       <td aria-colindex="2" role="cell" class> {{ATHPrice}}</td>
     </tr>
 
