@@ -5,7 +5,6 @@ import NavBarYo from './components/NavBarYo.vue'
 import HistoricalChart from './components/HistoricalChart.vue'
 import HistoricalChartEth from './components/HistoricalChartEth.vue'
 import HistoricalChartXmr from './components/HistoricalChartXmr.vue'
-import DropDownCoin from './components/DropDownCoin.vue'
 </script>
 
 <template>
